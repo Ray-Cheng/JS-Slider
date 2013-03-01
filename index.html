@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/m_scroll.js" type="text/javascript" ></script>
+        <style>
+            #akulubala_scroll{
+                cursor: pointer;
+            }
+            /*这里height和width要写死，免得到js里面写循环，虽然可以,float 当direction选择right的时候这里也要加上float*/
+            #akulubala_scroll_child li{
+                list-style: none;
+                height: 160px;
+                width: 280px;
+                float: right;
+            }
+            #example{
+                cursor: pointer
+            }
+            #example_child li{
+                list-style: none;
+            }
+        </style>
+  <script type="text/javascript" src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/my_scroll.js"></script>
+	<script type="text/javascript" src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/my_scroll.js"></script>
+	<script type="text/javascript" src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/my_scroll.js"></script>
+	<script type="text/javascript" src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/my_scroll.js"></script>
+    </head>
+    <body style="padding:10px">
+        <div id="akulubala_scroll" style="border:1px solid black">
+                <ul id="akulubala_scroll_child"> 
+                    <li><img src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/1.jpg" /></li>
+                    <li><img src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/2.jpg" /></li>
+                    <li><img src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/3.jpg" /></li>
+                    <li><img src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/4.jpg" /></li>
+                    <li><img src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/5.jpg" /></li>
+                    <li><img src="http://sandbox.runjs.cn/uploads/rs/180/wcq8k1l0/6.jpg" /></li>              
+                </ul>
+        </div>
+        <script>
+        akulubala.scroll({
+            "id":"akulubala_scroll",
+            "mode":"durative",//默认fitful间歇的,durative持续
+            "direction":"right",
+            "speed":8000,
+            "style":{
+                "width":"280px",
+                "height":"160px",
+                "overflow":false
+            }
+        });
+	//这里一个页面有多个滚动实例会有问题，目前还没解决，JS面向对象还没学好，求指教
+	//		akulubala.scroll({
+  //          "id":"example"
+  //      });  
+        </script>
+    </body>
+</html>
